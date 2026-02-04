@@ -1,0 +1,31 @@
+name: 💡 Feature Request
+description: Pitch a new idea or improvement.
+title: "[Feature]: "
+labels: ["enhancement", "needs discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Got a vision?** Let's hear it.
+  - type: textarea
+    id: pitch
+    attributes:
+      label: The Pitch
+      description: What do you want to add or change?
+      placeholder: I think the Island should turn red when battery is low...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this cool?
+      description: How does this improve the flow?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Any alternatives?
+      description: Have you considered other ways to solve this?
+    validations:
+      required: false
